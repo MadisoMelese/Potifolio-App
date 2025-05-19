@@ -5,7 +5,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { p } from "framer-motion/client";
-// import { Parallax } from "react-parallax";
+// import { Parallax } from "react-par
 import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => {
