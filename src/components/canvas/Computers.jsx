@@ -1,9 +1,10 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState, useCallback } from "react";
+import PropTypes from "prop-types";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
 import CanvasLoader from "../Loader";
 
+// 3D Computer Model Component
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
@@ -12,14 +13,13 @@ const Computers = ({ isMobile }) => {
       <hemisphereLight intensity={0.15} groundColor="black" />
       <spotLight
         position={[-20, 50, 10]}
-        angle={0.3} // Adjusted angle
-        penumbra={0.5} // Adjusted penumbra
-        intensity={2} // Increased intensity
+        angle={0.3}
+        penumbra={0.5}
+        intensity={2}
         castShadow
         shadow-mapSize-width={1024}
         shadow-mapSize-height={1024}
       />
-
       <pointLight intensity={22} />
       <primitive
         object={computer.scene}
@@ -31,47 +31,61 @@ const Computers = ({ isMobile }) => {
   );
 };
 
-const ComputersCanvas = () => {
+Computers.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+};
+
+// Custom hook for mobile detection
+const useMobileDetection = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+  const handleMediaQueryChange = useCallback((event) => {
+    setIsMobile(event.matches);
+  }, []);
 
-    // Set the initial value of the `isMobile` state variable
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
     setIsMobile(mediaQuery.matches);
 
-    // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    // Add the callback function as a listener for changes to the media query
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-    // Remove the listener when the component is unmounted
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
-  }, []);
+  }, [handleMediaQueryChange]);
+
+  return isMobile;
+};
+
+// Canvas Wrapper Component
+const ComputersCanvas = () => {
+  const isMobile = useMobileDetection();
 
   return (
     <Canvas
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
+      camera={{ 
+        position: [20, 3, 5], 
+        fov: isMobile ? 28 : 25 
+      }}
+      gl={{ 
+        preserveDrawingBuffer: true,
+        antialias: true 
+      }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
+          enablePan={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
+          autoRotate
+          autoRotateSpeed={0.5}
         />
         <Computers isMobile={isMobile} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );

@@ -32,7 +32,7 @@ const Contact = () => {
         to_email: 'madishamadiso00@gmail.com',
         message: form.message,
       },
-      'db9CKFa0hvAewjBkj'
+      'pRH6J2xzSNmketppL'
      ).then(()=>{
       setLoading(false)
       alert('Thank you. I will get back to you as soon as possible')
@@ -44,16 +44,13 @@ const Contact = () => {
      }, 
      (error) =>{
       setLoading(false)
-      console.log(error)
       alert('Something went wrong')
      }
     )
 
   };
 
-  // template_s9kyfog
-  // service_ukzemrf
-  // db9CKFa0hvAewjBkj     
+    
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden" id='contact'>

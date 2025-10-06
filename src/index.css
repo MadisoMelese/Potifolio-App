@@ -11,6 +11,46 @@
   color-scheme: dark;
 }
 
+.hero-section {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-section > * {
+  position: relative;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(12deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(12deg);
+  }
+}
+
+@keyframes float-delayed {
+  0%, 100% {
+    transform: translateY(0) rotate(-12deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-12deg);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -245,4 +285,28 @@
   50% {
     transform: scale(1.1);
   }
+}
+
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile menu animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to mobile menu items */
+nav ul li {
+  animation: slideIn 0.3s ease-out forwards;
+  opacity: 0;
 }
