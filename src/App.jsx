@@ -4,7 +4,6 @@ import {  Hero, Navbar, About, Tech, Experience, Works, Feedbacks, Footer,
   Contact,
   EarthCanvas,
   BallCanvas,
-  ComputersCanvas,
   StarsCanvas} from './components'
 const App = () => {
   return (
