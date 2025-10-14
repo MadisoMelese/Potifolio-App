@@ -123,29 +123,27 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Bonga University",
+    title: "Full Stack Developer",
+    company_name: "Bonga University, Ethiopia",
     icon: bu,
     iconBg: "#383E56",
     date: "Dec 2023 - Jan 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed software system called Graduate Document credentials Verification System for Bonga University",
+    "The Tech stack used is React JS, Node JS, MongoDB, and Express JS",
+    "The system is used to verify the credentials of the graduates of the university",
     ],
   },
   {
-    title: "JavaScript",
+    title: "Backend Developer Intern",
     company_name: "CodeCraft InfoTech",
     icon: code,
     iconBg: "#E6DEDD",
     date: "Oct 2024 - Dec 2024",
     points: [
-      "Developing and maintaining web applications using Javascript and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed a backend system for a different company under CodeCraft InfoTech",
+      "The Tech stack used is Node JS, Express JS, Django, FastAPI and Laravel, and Databases MongoDB, PostgreSQL, and MySQL",
+      "The system is used to manage the data of the company and provide different services to the clients",
     ],
   },
   {
@@ -155,10 +153,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "Nov 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining Softwares Solutions using Modern JavaScript frameworks like React.js/Next.js, Node.js/Nest.js",
+
     ],
   },
   {
@@ -168,7 +164,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Dec 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing and maintaining web applications using React.js + Tailwindcss, Node.js, Express.js, Laravel, Django, SQL, MongoDB, and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
