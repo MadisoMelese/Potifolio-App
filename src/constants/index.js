@@ -2,6 +2,7 @@ import {
   gitexplorer,
   madishacodecamp,
   ecommerce,
+  bugcvs,
   bu,
   code,
   fiver,
@@ -164,10 +165,8 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Dec 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js + Tailwindcss, Node.js, Express.js, Laravel, Django, SQL, MongoDB, and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developing and maintaining websites using React.js + Tailwindcss, Next.js, Nest.js, Node.js, Express.js, Laravel, Django, SQL, MongoDB, PostgreSQL.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
 ];
@@ -202,6 +201,33 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Graduate Document Verification System",
+    description:
+      "Web-based platform that allows users to search, order, and manage their goods from various providers, providing a convenient and efficient solution for customers.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: bugcvs,
+    source_code_link: "https://github.com/MadisoMelese/My-Graduation-project",
+    live_demo:"https://bonga-university-graduate-document.onrender.com/"
+
+  },
+  {
     name: "Ecommerce App",
     description:
       "Web-based platform that allows users to search, order, and manage their goods from various providers, providing a convenient and efficient solution for customers.",
@@ -229,7 +255,7 @@ const projects = [
 
   },
   {
-    name: "Job IT",
+    name: "My Future Code Lab ",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
