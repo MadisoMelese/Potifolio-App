@@ -305,6 +305,6 @@ const projects = [
     live_demo:"https://github.com/MadisoMelese/React-Router"
 
   },
-];
+]; 
 
 export { services, technologies, experiences, testimonials, projects };
