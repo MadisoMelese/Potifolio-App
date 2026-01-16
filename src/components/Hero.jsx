@@ -1,6 +1,4 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { styles } from "../styles";
 import madiso from "../assets/madiso.JPG";
 
 const Hero = () => {
@@ -39,7 +37,7 @@ const Hero = () => {
                     CS Graduate & Founder of Hosaina Tech Solutions
                   </h2>
                   <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl">
-                    Building scalable digital solutions with 3+ years of
+                    Building scalable digital solutions with 4+ years of
                     professional experience. Specializing in full-stack
                     development and technical leadership.
                   </p>
@@ -85,7 +83,7 @@ const Hero = () => {
                 {/* Experience Badge - Clean & Minimal */}
                 <div className="absolute -top-3 -right-3 bg-white/95 backdrop-blur-sm text-gray-900 px-4 py-2 rounded-lg shadow-lg border border-white/20">
                   <div className="text-center">
-                    <div className="font-bold text-xl text-[#025eff]">3+</div>
+                    <div className="font-bold text-xl text-[#025eff]">4+</div>
                     <div className="text-xs font-semibold text-gray-600 tracking-tight">
                       Years
                     </div>
@@ -95,7 +93,7 @@ const Hero = () => {
                 {/* Social Links - Minimal & Clean */}
                 <div className="flex justify-center gap-6 mt-6">
                   <motion.a
-                    href="https://linkedin.com/in/your-profile"
+                    href="https://www.linkedin.com/in/madiso-abebe-9a2080358/"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
@@ -111,7 +109,7 @@ const Hero = () => {
                   </motion.a>
 
                   <motion.a
-                    href="https://github.com/your-username"
+                    href="https://github.com/MadisoMelese"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
