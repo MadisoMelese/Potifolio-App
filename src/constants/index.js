@@ -1,4 +1,5 @@
 import {
+  teamwork,
   gitexplorer,
   madishacodecamp,
   ecommerce,
@@ -124,6 +125,18 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Backend Developer",
+    company_name: "Teamwork IT Solution, Ethiopia",
+    icon: teamwork,
+    iconBg: "#383E56",
+    date: "Oct 2025 - Present",
+    points: [
+      "Developing a backend system for a different company under Teamwork IT Solution",
+      "The Tech stack I'm using is Node JS, Express JS, Django, FastAPI and Laravel, and Databases MongoDB, PostgreSQL, and MySQL",
+      "The system is used to manage the data of the company and provide different services to the clients",
+    ],
+  },
+  {
     title: "Full Stack Developer",
     company_name: "Bonga University, Ethiopia",
     icon: bu,
@@ -137,7 +150,7 @@ const experiences = [
   },
   {
     title: "Backend Developer Intern",
-    company_name: "CodeCraft InfoTech",
+    company_name: "CodeCraft InfoTech, India",
     icon: code,
     iconBg: "#E6DEDD",
     date: "Oct 2024 - Dec 2024",
@@ -155,6 +168,8 @@ const experiences = [
     date: "Nov 2023 - Present",
     points: [
       "Developing and maintaining Softwares Solutions using Modern JavaScript frameworks like React.js/Next.js, Node.js/Nest.js",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
 
     ],
   },
@@ -167,6 +182,7 @@ const experiences = [
     points: [
       "Developing and maintaining websites using React.js + Tailwindcss, Next.js, Nest.js, Node.js, Express.js, Laravel, Django, SQL, MongoDB, PostgreSQL.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
+      
     ],
   },
 ];

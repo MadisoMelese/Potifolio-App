@@ -8,6 +8,7 @@ import bugcvs from "./bugcvs.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import teamwork from "./teamwork.jpg";
 
 
 import css from "./tech/css.png";
@@ -40,6 +41,7 @@ import madishacodecamp from "./madishacodecamp.png";
 import gitexplorer from "./gitexplorer.png";
 
 export {
+  teamwork,
   gitexplorer,
   madishacodecamp,
   ecommerce,
