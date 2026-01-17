@@ -132,7 +132,9 @@ const experiences = [
     date: "Oct 2025 - Present",
     points: [
       "Developing a backend system for a different company under Teamwork IT Solution",
-      "The Tech stack I'm using is Node JS, Express JS, Django, FastAPI and Laravel, and Databases MongoDB, PostgreSQL, and MySQL",
+      "The Tech stack I'm using is Node JS, Express JS, Nest.js, Django, FastAPI and Laravel",
+      "Databases: MongoDB, PostgreSQL, and MySQL",
+      "Tools: Docker, Kubernetes, AWS, Azure, CI/CD, Jenkins, Git, and GitHub Actions",
       "The system is used to manage the data of the company and provide different services to the clients",
     ],
   },
@@ -144,8 +146,8 @@ const experiences = [
     date: "Dec 2023 - Jan 2025",
     points: [
       "Developed software system called Graduate Document credentials Verification System for Bonga University",
-    "The Tech stack used is React JS, Node JS, MongoDB, and Express JS",
-    "The system is used to verify the credentials of the graduates of the university",
+      "The Tech stack used is React JS, Node JS, MongoDB, and Express JS with Tailwind CSS for styling",
+      "The system is used to verify the credentials of the graduates of the university",
     ],
   },
   {
@@ -170,7 +172,6 @@ const experiences = [
       "Developing and maintaining Softwares Solutions using Modern JavaScript frameworks like React.js/Next.js, Node.js/Nest.js",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-
     ],
   },
   {
@@ -182,7 +183,6 @@ const experiences = [
     points: [
       "Developing and maintaining websites using React.js + Tailwindcss, Next.js, Nest.js, Node.js, Express.js, Laravel, Django, SQL, MongoDB, PostgreSQL.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      
     ],
   },
 ];
@@ -199,7 +199,7 @@ const testimonials = [
   {
     testimonial:
       "After Madiso optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Bestegew",
+    name: "Bestegew",
     designation: "Dean",
     company: "WH College",
     image: "https://randomuser.me/api/portraits/men/98.jpg",
@@ -212,7 +212,6 @@ const testimonials = [
     company: "Jimma Coffee",
     image: "https://randomuser.me/api/portraits/women/98.jpg",
   },
-
 ];
 
 const projects = [
@@ -240,8 +239,7 @@ const projects = [
     ],
     image: bugcvs,
     source_code_link: "https://github.com/MadisoMelese/My-Graduation-project",
-    live_demo:"https://bonga-university-graduate-document.onrender.com/"
-
+    live_demo: "https://bonga-university-graduate-document.onrender.com/",
   },
   {
     name: "Ecommerce App",
@@ -267,8 +265,7 @@ const projects = [
     ],
     image: ecommerce,
     source_code_link: "https://github.com/MadisoMelese/Ecommerce-App",
-    live_demo:"https://ecommerce-app-tlto.onrender.com/"
-
+    live_demo: "https://ecommerce-app-tlto.onrender.com/",
   },
   {
     name: "My Future Code Lab ",
@@ -290,8 +287,7 @@ const projects = [
     ],
     image: madishacodecamp,
     source_code_link: "https://github.com/MadisoMelese/MadioshaCodeLab",
-    live_demo:"https://madisomelese.github.io/MadioshaCodeLab/build/"
-
+    live_demo: "https://madisomelese.github.io/MadioshaCodeLab/build/",
   },
   {
     name: "Git Explorer",
@@ -314,13 +310,11 @@ const projects = [
         name: "API",
         color: "green-text-gradient",
       },
-      
     ],
     image: gitexplorer,
     source_code_link: "https://github.com/MadisoMelese/React-Router",
-    live_demo:"https://github.com/MadisoMelese/React-Router"
-
+    live_demo: "https://github.com/MadisoMelese/React-Router",
   },
-]; 
+];
 
 export { services, technologies, experiences, testimonials, projects };
