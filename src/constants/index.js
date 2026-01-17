@@ -216,7 +216,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Graduate Document Verification System",
+    name: "Graduate Document Credentials Verification System",
     description:
       "Web-based platform that allows users to search, order, and manage their goods from various providers, providing a convenient and efficient solution for customers.",
     tags: [
