@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import madiso from "../assets/madiso.JPG";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -34,7 +35,15 @@ const Hero = () => {
                 {/* Subtitle */}
                 <div className="space-y-4">
                   <h2 className="text-xl sm:text-2xl text-gray-300 font-light leading-relaxed">
-                    CS Graduate & Founder of Hosaina Tech Solutions
+                    CS Graduate & Founder of
+                    <Link
+                      className="text-[#915eff] hover:text-[#b47fff] font-semibold ml-1"
+                      to={"https://hosainatechsolutions.com.et"}
+                      target="_blank"
+                    >
+                      {" "}
+                      Hosaina Tech Solutions
+                    </Link>
                   </h2>
                   <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl">
                     Building scalable digital solutions with 4+ years of
@@ -91,7 +100,7 @@ const Hero = () => {
                 </div>
 
                 {/* Social Links - Minimal & Clean */}
-                <div className="flex justify-center gap-6 mt-6">
+                <div className="relative z-10 flex justify-center gap-6 mt-6">
                   <motion.a
                     href="https://www.linkedin.com/in/madiso-abebe-9a2080358/"
                     target="_blank"
@@ -162,4 +171,4 @@ const Hero = () => {
   );
 };
 
-export default Hero
+export default Hero;
