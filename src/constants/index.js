@@ -134,7 +134,7 @@ const experiences = [
       "Developing a backend system for a different company under Teamwork IT Solution",
       "The Tech stack I'm using is Node JS, Express JS, Nest.js, Django, FastAPI and Laravel",
       "Databases: MongoDB, PostgreSQL, and MySQL",
-      "Tools: Docker, Kubernetes, AWS, Azure, CI/CD, Jenkins, Git, and GitHub Actions",
+      "Tools: Docker, Kubernetes, AWS, Azure, Jenkins, Git, and GitHub Actions",
       "The system is used to manage the data of the company and provide different services to the clients",
     ],
   },
