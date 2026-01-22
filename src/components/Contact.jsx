@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 
 
 import { useRef, useState } from "react";
@@ -49,7 +50,7 @@ const showToast = (type, message) => {
   setForm({ name: '', email: '', message: '' });
 }, (error) => {
   setLoading(false);
-  showToast("error", "Something went wrong. Please try again or email me directly.");
+  showToast("error", "Something went wrong. Please try again or email me directly.", error);
 });
 
   };

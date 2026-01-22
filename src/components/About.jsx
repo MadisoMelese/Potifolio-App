@@ -1,5 +1,7 @@
-import React from "react";
-import ParallaxTilt from "react-parallax-tilt";
+/* eslint-disable react/prop-types */
+/* eslint-disable react-refresh/only-export-components */
+// import React from "react";
+// import ParallaxTilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
@@ -94,11 +96,14 @@ const About = () => {
             solutions. As the founder of
             <span className="text-white font-semibold">
               {" "}
-                                  <Link 
-                      className="text-[#915eff] hover:text-[#b47fff] font-semibold ml-1"
-                    to={'https://hosainatechsolutions.com.et'}
-                    target="_blank"
-                    > Hosaina Tech Solutions</Link>
+              <a
+                className="text-[#915eff] hover:text-[#b47fff] font-semibold ml-1"
+                href={"https://hosainatechsolutions.com.et"}
+                target="_blank"
+              >
+                {" "}
+                Hosaina Tech Solutions
+              </a>
             </span>
             , I lead a team focused on creating scalable, user-centered
             applications that drive real-world impact.
@@ -198,7 +203,7 @@ const About = () => {
           </div>
 
           <p className="text-gray-300 leading-relaxed">
-            At this stage of my journey, I'm deeply focused on advancing
+            At this stage of my journey, I&lsquo;m deeply focused on advancing
             <span className="text-white font-medium">
               {" "}
               enterprise software architecture
@@ -210,11 +215,14 @@ const About = () => {
             </span>
             . Through{" "}
             <span className="text-white font-semibold">
-                                  <Link 
-                      className="text-[#915eff] hover:text-[#b47fff] font-semibold ml-1"
-                    to={'https://hosainatechsolutions.com.et'}
-                    target="_blank"
-                    > Hosaina Tech Solutions</Link>
+              <Link
+                className="text-[#915eff] hover:text-[#b47fff] font-semibold ml-1"
+                to={"https://hosainatechsolutions.com.et"}
+                target="_blank"
+              >
+                {" "}
+                Hosaina Tech Solutions
+              </Link>
             </span>
             , my goal is to build technologies that empower businesses, simplify
             workflows, and bridge the gap between innovation and accessibility.

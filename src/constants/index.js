@@ -24,13 +24,6 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
 } from "../assets";
 
@@ -137,13 +130,13 @@ const experiences = [
       "Tools: Docker, Kubernetes, AWS, Azure, Jenkins, Git, and GitHub Actions",
       "The system is used to manage the data of the company and provide different services to the clients",
     ],
-  },
+  }, 
   {
     title: "Full Stack Developer",
     company_name: "Bonga University, Ethiopia",
     icon: bu,
     iconBg: "#383E56",
-    date: "Dec 2023 - Jan 2025",
+    date: "Dec 2023 - Jun 2025",
     points: [
       "Developed software system called Graduate Document credentials Verification System for Bonga University",
       "The Tech stack used is React JS, Node JS, MongoDB, and Express JS with Tailwind CSS for styling",

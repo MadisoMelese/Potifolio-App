@@ -1,9 +1,8 @@
-import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import {  Hero, Navbar, About, Tech, Experience, Works, Feedbacks, Footer,
   Contact,
-  EarthCanvas,
-  BallCanvas,
+  // EarthCanvas,
+  // BallCanvas,
   StarsCanvas} from './components'
 const App = () => {
   return (
