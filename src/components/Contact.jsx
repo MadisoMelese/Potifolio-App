@@ -121,11 +121,11 @@ const showToast = (type, message) => {
             <p className={`${styles.sectionSubText} font-semibold`}>GET IN TOUCH</p>
           </div>
           <h3 className={`${styles.sectionHeadText} mb-4`}>
-            Let's <span className="text-[#025eff]">Connect</span>
+            Let&lsquo;s <span className="text-[#025eff]">Connect</span>
           </h3>
           <p className="text-gray-300 text-lg leading-relaxed">
             Have a project in mind or want to discuss potential opportunities? 
-            I'm always open to talking about technology, new projects, and creative ideas.
+            I&lsquo;m always open to talking about technology, new projects, and creative ideas.
           </p>
         </div>
 
@@ -242,7 +242,7 @@ const showToast = (type, message) => {
       <span className="text-green-400 font-semibold text-sm sm:text-base">Currently Available</span> {/* Responsive text */}
     </div>
     <p className="text-gray-300 text-xs sm:text-sm leading-relaxed"> {/* Responsive text */}
-      I'm currently accepting new projects and opportunities. Response time is typically within 24 hours.
+      I&lsquo;m currently accepting new projects and opportunities. Response time is typically within 24 hours.
     </p>
   </div>
 </motion.div>
